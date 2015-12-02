@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  TimeMovie
+//
+//  Created by qianfeng on 15/11/30.
+//  Copyright (c) 2015年 qianfeng. All rights reserved.
+//
+
+#ifndef TimeMovie_PrefixHeader_pch
+#define TimeMovie_PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "MJRefresh.h"
+#import "JGProgressHUD.h"
+#import "MYCustomView.h"
+#import "Header.h"
+//iPhone6 的宽
+#define iphone6 375.0f
+//适配的比例尺
+#define scale_Screen screen_WIDTH / iphone6
+//tabbar的高
+#define tabBar_Height 49.0f
+//导航栏的高
+#define nav_Height 64.0f
+//当前屏幕的宽高
+#define screen_WIDTH [UIScreen mainScreen].bounds.size.width
+#define screen_HEIGHT [UIScreen mainScreen].bounds.size.height
+//图片的加载
+#define imageNameRenderStr(str) [[UIImage imageNamed:(str)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+//字号大小
+#define fontSize14 [UIFont systemFontOfSize:14.0f]
+#endif
